@@ -22,6 +22,16 @@ lib
 
 # --------------------------
 
+# ignore them thar slugs
+touch .slugignore
+echo "*.psd
+*.pdf
+test
+spec
+" >> .slugignore
+
+# --------------------------
+
 # set up the basics
 touch README.mdown
 
