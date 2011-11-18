@@ -5,8 +5,6 @@
 #
 
 #!/usr/bin/env python
-debug = True
-
 import os.path
 import os
 import tornado.escape
@@ -19,12 +17,6 @@ import unicodedata
 # import and define tornado-y things
 from tornado.options import define, options
 define("port", default=5000, help="run on the given port", type=int)
-
-# enable logging (the easy way)
-if (debug == True):
-	import logging
-	tornado.options.parse_command_line() 
-	log = logging.info
 
 # application settings and handle mapping info
 class Application(tornado.web.Application):
@@ -42,7 +34,7 @@ class Application(tornado.web.Application):
 
 # the main page
 class MainHandler(tornado.web.RequestHandler):
-	def get(self):
+	def get(self, q):
 		if os.environ.has_key('GOOGLEANALYTICSID'):
 			google_analytics_id = os.environ['GOOGLEANALYTICSID']
 		else:
@@ -60,11 +52,6 @@ def main():
 	tornado.options.parse_command_line()
 	http_server = tornado.httpserver.HTTPServer(Application())
 	http_server.listen(os.environ.get("PORT", 5000))
-
-	# log it
-	if (debug == True):
-		log('starting up tornado ioloop')
-		log("running on port: %d" % options.port)
 
 	# start it up
 	tornado.ioloop.IOLoop.instance().start()
