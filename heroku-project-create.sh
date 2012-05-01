@@ -3,32 +3,12 @@
 #
 # by Mike Dory | dory.me
 # 11.12.11
+# updated by Tedb0t | tedbot.com
 
 # --------------------------
 
 # git!
 git init
-
-# set up the gitignore
-touch .gitignore
-echo "bin
-build
-include
-lib
-*.pyc
-.DS_Store
-.svn
-" >> .gitignore
-
-# --------------------------
-
-# ignore them thar slugs
-touch .slugignore
-echo "*.psd
-*.pdf
-test
-spec
-" >> .slugignore
 
 # --------------------------
 
@@ -45,23 +25,17 @@ echo "web: python main.py" >> Procfile
 
 # --------------------------
 
-# set up directories
-mkdir static
-mkdir static/js
-mkdir static/images
-mkdir static/css
-mkdir templates
-mkdir templates/modules
+echo "Committing to Git"
 
-# static file conventions
-touch static/js/script.js
-touch static/css/style.css
-touch static/images/favicon.ico
+git add .
+git commit -m "Initial Commit"
 
-# file name convetions
-touch main.py
-touch templates/main.html
-touch templates/home.html
+# --------------------------
+
+echo "Creating Heroku app & pushing"
+
+heroku create --stack cedar
+git push heroku master
 
 # --------------------------
 
