@@ -39,4 +39,6 @@ git push heroku master
 
 # --------------------------
 
-echo "new project created!"
+echo "New project created! Taking you there now..."
+
+heroku open
