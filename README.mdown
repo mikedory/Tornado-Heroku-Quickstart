@@ -2,7 +2,11 @@
 
 [Heroku](http://heroku.com) is a great system for launching applications. [Tornado](http://tornadoweb.org) is a great app framework. They play nicely together.
 
-This app should give you the basics to get a super-simple app up and running on Heroku.  You can do all that just by cloning this repo, and running this: 
+This app should give you the basics to get a super-simple app up and running on Heroku.  You can do all that just by downloading your own copy:
+
+	curl -L 'https://github.com/mikedory/Tornado-Heroku-Helpers/tarball/master' | tar zx
+
+Then, `cd` to that directory and run the setup script: 
  
 	./init.sh
 
