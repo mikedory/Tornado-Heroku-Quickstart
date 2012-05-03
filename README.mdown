@@ -4,9 +4,9 @@
 
 This app should give you the basics to get a super-simple app up and running on Heroku.  You can do all that just by downloading your own copy:
 
-	curl -L 'https://github.com/mikedory/Tornado-Heroku-Helpers/tarball/master' | tar zx
+	curl -L 'https://github.com/mikedory/Tornado-Heroku-Helpers/tarball/master' | tar zx && cd mikedory-Tornado-Heroku-Helpers-*
 
-Then, `cd` to that directory and run the setup script: 
+Then, run the setup script: 
  
 	./init.sh
 
