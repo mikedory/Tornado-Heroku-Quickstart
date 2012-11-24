@@ -7,7 +7,10 @@
 
 # --------------------------
 
+echo "************************************"
+
 # setup the libs dirs
+echo "Creating directories and fetching dependancies"
 mkdir -p ./templates/static/js/libs/jquery ./templates/static/css/libs/normalize
 
 # fetch yer dependancies
@@ -41,3 +44,4 @@ rm ./$0
 
 # blam
 echo "Done!"
+echo "************************************"
