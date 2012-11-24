@@ -11,11 +11,11 @@ echo "************************************"
 
 # setup the libs dirs
 echo "Creating directories and fetching dependancies"
-mkdir -p ./templates/static/js/libs/jquery ./templates/static/css/libs/normalize
+mkdir -p ./static/js/libs/jquery ./static/css/libs/normalize
 
 # fetch yer dependancies
-curl -o ./templates/static/js/libs/jquery/jquery-1.8.3.min.js https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js
-curl -o ./templates/static/css/libs/normalize.css http://necolas.github.com/normalize.css/2.0.1/normalize.css
+curl -o ./static/js/libs/jquery/jquery-1.8.3.min.js https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js
+curl -o ./static/css/libs/normalize.css http://necolas.github.com/normalize.css/2.0.1/normalize.css
 
 # --------------------------
 
