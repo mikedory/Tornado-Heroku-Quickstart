@@ -12,7 +12,6 @@ mkdir -p ./templates/static/js/libs/jquery ./templates/static/js/libs/modernizr
 
 # fetch yer dependancies
 curl -o ./templates/static/js/libs/jquery/jquery-1.8.3.min.js https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js
-curl -o ./templates/static/js/libs/modernizr/modernizr-2.6.2.js http://modernizr.com/downloads/modernizr-2.6.2.js
 
 # --------------------------
 
