@@ -2,8 +2,17 @@
 # (for Tornado on Heroku)
 #
 # by Mike Dory | dory.me
-# 11.12.11
+# 11.12.11, updated 11.24.12
 # updated by Tedb0t | tedbot.com
+
+# --------------------------
+
+# setup the libs dirs
+mkdir -p ./templates/static/js/libs/jquery ./templates/static/css/libs/normalize
+
+# fetch yer dependancies
+curl -o ./templates/static/js/libs/jquery/jquery-1.8.3.min.js https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js
+curl -o ./templates/static/css/libs/css/normalize.css http://necolas.github.com/normalize.css/2.0.1/normalize.css
 
 # --------------------------
 
@@ -15,43 +24,20 @@ git init
 # set up the basics
 touch README.mdown
 
-# set up the pip requirements
-touch requirements.txt
-echo "Tornado==2.4" >> requirements.txt
-
-# set up the Procfile
-touch Procfile
-echo "web: python main.py" >> Procfile
-
 # --------------------------
 
-echo "Committing to Git"
-
-# Heroku runs on Git
-git add .
-git commit -m "Initial Commit"
-
-# --------------------------
-
-echo "Creating Heroku app & pushing"
-
-# make a new app on the cedar stack (where the Python apps live)
-heroku create --stack cedar
-git push heroku master
-
-# --------------------------
-
-echo "New project created! Taking you there now."
-
-# let's go see the new app!
-heroku open
-
-# --------------------------
+# make a new Heroku app (or don't)
+echo "Do you want to start a Heroku app as well?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) sh ./heroku.sh; break;;
+        No ) exit;;
+    esac
+done
 
 # no need for this file anymore, eh?
-
 echo "Cleaning up..."
-
 rm ./$0
 
+# blam
 echo "Done!"
