@@ -42,6 +42,6 @@ done
 echo "Cleaning up..."
 rm ./$0
 
-# blam
+# blam. 'tis done.
 echo "Done!"
 echo "************************************"
