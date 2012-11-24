@@ -1,17 +1,20 @@
-# Tornado on Heroku
+## Tornado on Heroku
 
 [Heroku](http://heroku.com) is a great system for launching applications. [Tornado](http://tornadoweb.org) is a great app framework. They play nicely together.
 
 This app should give you the basics to get a super-simple app up and running on Heroku.  You can do all that just by downloading your own copy:
 
-	curl -L 'https://github.com/mikedory/Tornado-Heroku-Quickstart/tarball/master' | tar zx && cd mikedory-Tornado-Heroku-Quickstart-*
+    curl -L 'https://github.com/mikedory/Tornado-Heroku-Quickstart/tarball/master' | tar zx && cd mikedory-Tornado-Heroku-Quickstart-*
 
 Then, run the setup script: 
  
-	./init.sh
+    ./init.sh
 
-That's it!  Off you go!
+That's it!  You're good to go!
 
-# About
+__Note:__ If you don't want to immediately start a Tornado app, that's fine too! Just choose option #2 during the init process, and it'll skip that part.  You can then run `heroku.sh` at any point later on to make a new app and punt everything up.
+
+
+## About
 
 This app was assembled by [Mike Dory](https://github.com/mikedory), with some great updates by [tedb0t](https://github.com/virgildisgr4ce). Contributions are welcome, so fork away!

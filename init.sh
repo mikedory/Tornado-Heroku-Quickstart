@@ -7,12 +7,15 @@
 
 # --------------------------
 
+echo "************************************"
+
 # setup the libs dirs
+echo "Creating directories and fetching dependancies"
 mkdir -p ./templates/static/js/libs/jquery ./templates/static/css/libs/normalize
 
 # fetch yer dependancies
 curl -o ./templates/static/js/libs/jquery/jquery-1.8.3.min.js https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js
-curl -o ./templates/static/css/libs/css/normalize.css http://necolas.github.com/normalize.css/2.0.1/normalize.css
+curl -o ./templates/static/css/libs/normalize.css http://necolas.github.com/normalize.css/2.0.1/normalize.css
 
 # --------------------------
 
@@ -30,8 +33,8 @@ touch README.mdown
 echo "Do you want to start a Heroku app as well?"
 select yn in "Yes" "No"; do
     case $yn in
-        Yes ) sh ./heroku.sh; break;;
-        No ) exit;;
+        Yes ) ./heroku.sh; break;;
+        No ) echo "no worries, you can do that later via the heroku.sh file"; break;;
     esac
 done
 
@@ -39,5 +42,6 @@ done
 echo "Cleaning up..."
 rm ./$0
 
-# blam
+# blam. 'tis done.
 echo "Done!"
+echo "************************************"
