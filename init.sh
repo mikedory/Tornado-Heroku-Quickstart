@@ -30,7 +30,7 @@ touch README.mdown
 echo "Do you want to start a Heroku app as well?"
 select yn in "Yes" "No"; do
     case $yn in
-        Yes ) ./heroku.sh; break;;
+        Yes ) sh ./heroku.sh; break;;
         No ) exit;;
     esac
 done
