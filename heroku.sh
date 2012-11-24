@@ -21,7 +21,7 @@ echo "Committing to Git"
 
 # Heroku runs on Git
 git add .
-git commit -m "Initial Commit"
+git commit -am "Initial Commit"
 
 # --------------------------
 

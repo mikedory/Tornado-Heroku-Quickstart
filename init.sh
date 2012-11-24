@@ -26,6 +26,15 @@ touch README.mdown
 
 # --------------------------
 
+# make a new Heroku app (or don't)
+echo "Do you want to start a Heroku app as well?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) heroku.sh; break;;
+        No ) exit;;
+    esac
+done
+
 # no need for this file anymore, eh?
 echo "Cleaning up..."
 rm ./$0
