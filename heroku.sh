@@ -41,9 +41,8 @@ heroku open
 # --------------------------
 
 # no need for this file anymore, eh?
-
 echo "Cleaning up..."
-
 rm ./$0
 
+# blam
 echo "Done!"
