@@ -31,7 +31,7 @@ echo "Do you want to start a Heroku app as well?"
 select yn in "Yes" "No"; do
     case $yn in
         Yes ) sh ./heroku.sh; break;;
-        No ) echo "no worries, you can do that later via the heroku.sh file"; exit;;
+        No ) echo "no worries, you can do that later via the heroku.sh file"; break;;
     esac
 done
 
