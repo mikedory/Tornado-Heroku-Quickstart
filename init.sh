@@ -9,6 +9,10 @@
 
 echo "************************************"
 
+# create directories (just in case they need creatin')
+mkdir -p templates
+mkdir -p static static/img static/css static/js
+
 # setup the libs dirs
 echo "Creating directories and fetching dependancies"
 mkdir -p ./static/js/libs/jquery ./static/css/libs/normalize
