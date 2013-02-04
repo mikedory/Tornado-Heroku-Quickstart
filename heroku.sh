@@ -2,8 +2,8 @@
 # (for Tornado on Heroku)
 #
 # by Mike Dory | dory.me
-# 11.12.11, updated 02.01.13
-# updated by Tedb0t | tedbot.com
+# 11.12.11, last updated 02.04.13
+# contributions by Tedb0t, gregory80
 
 # --------------------------
 
@@ -13,7 +13,7 @@ echo "Tornado==2.4.1" >> requirements.txt
 
 # set up the Procfile
 touch Procfile
-echo "web: python main.py" >> Procfile
+echo "web: python main.py -port=$PORT " >> Procfile
 
 # --------------------------
 
