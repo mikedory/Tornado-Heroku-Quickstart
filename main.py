@@ -52,8 +52,8 @@ class MainHandler(tornado.web.RequestHandler):
 def main():
     tornado.options.parse_command_line()
     http_server = tornado.httpserver.HTTPServer(Application())
-    http_server.listen(os.environ.get("PORT", 5000))
-
+    http_server.listen( tornado.options.options.port )
+    
     # start it up
     tornado.ioloop.IOLoop.instance().start()
 
