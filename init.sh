@@ -2,8 +2,8 @@
 # (for Tornado on Heroku)
 #
 # by Mike Dory | dory.me
-# 11.12.11, updated 02.01.13
-# updated by Tedb0t | tedbot.com
+# 11.12.11, last updated 02.04.13
+# contributions by Tedb0t, gregory80
 
 # --------------------------
 
