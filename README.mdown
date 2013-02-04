@@ -17,4 +17,4 @@ __Note:__ If you don't want to immediately start a Tornado app, that's fine too!
 
 ## About
 
-This app was assembled by [Mike Dory](https://github.com/mikedory), with some great updates by [tedb0t](https://github.com/virgildisgr4ce). Contributions are welcome, so fork away!
+This app was assembled by [Mike Dory](https://github.com/mikedory), with some great updates by [tedb0t](https://github.com/virgildisgr4ce) and [gregory80](https://github.com/gregory80). Contributions are welcome, so fork away!
