@@ -15,6 +15,10 @@ echo "Tornado==3.0.1" >> requirements.txt
 touch Procfile
 echo 'web: python main.py --port=$PORT' >> Procfile
 
+# specify a runtime
+touch runtime.txt
+echo "python-2.7.4" >> runtime.txt
+
 # --------------------------
 
 echo "Committing to Git"
