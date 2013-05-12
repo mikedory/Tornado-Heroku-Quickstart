@@ -21,8 +21,9 @@ echo "Committing to Git"
 
 # Heroku runs on Git
 git add .
-git reset -- heroku.sh
-git commit -am "Initial Commit"
+git rm --cached heroku.sh
+git rm --cached heroku.sh
+git commit -am "Initial commit"
 
 # --------------------------
 
