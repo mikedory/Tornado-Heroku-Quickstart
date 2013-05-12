@@ -37,8 +37,12 @@ touch README.mdown
 echo "Do you want to start a Heroku app as well?"
 select yn in "Yes" "No"; do
     case $yn in
-        Yes ) ./heroku.sh; break;;
-        No ) echo "No worries, you can do that later via the heroku.sh file"; break;;
+        Yes ) 
+            ./heroku.sh;
+            break;;
+        No ) 
+            echo "No worries, you can do that later via the heroku.sh file"
+            ;;
     esac
 done
 
@@ -46,8 +50,14 @@ done
 echo "Do you want a virtualenv?"
 select yn in "Yes" "No"; do
     case $yn in
-        Yes ) virtualenv venv --distribute && source ./venv/bin/activate; break;;
-        No ) echo "Cool."; break;;
+        Yes )
+            virtualenv venv --distribute
+            source ./venv/bin/activate
+            pip install -r requirements.txt
+            ;;
+        No ) 
+            echo "Cool."
+            ;;
     esac
 done
 
