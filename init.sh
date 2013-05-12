@@ -33,20 +33,7 @@ touch README.mdown
 
 # --------------------------
 
-# make a new Heroku app (or don't)
-echo "Do you want to start a Heroku app as well?"
-select yn in "Yes" "No"; do
-    case $yn in
-        Yes ) 
-            ./heroku.sh;
-            break;;
-        No ) 
-            echo "No worries, you can do that later via the heroku.sh file"
-            break;;
-    esac
-done
-
-# make a new Heroku app (or don't)
+# offering to create a virtualenv
 echo "Do you want a virtualenv?"
 select yn in "Yes" "No"; do
     case $yn in
@@ -57,6 +44,19 @@ select yn in "Yes" "No"; do
             break;;
         No ) 
             echo "Cool."
+            break;;
+    esac
+done
+
+# make a new Heroku app (or don't)
+echo "Do you want to start a Heroku app as well?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) 
+            ./heroku.sh;
+            break;;
+        No ) 
+            echo "No worries, you can do that later via the heroku.sh file"
             break;;
     esac
 done
