@@ -22,7 +22,7 @@ echo "Committing to Git"
 # Heroku runs on Git
 git add .
 git rm --cached heroku.sh
-git rm --cached heroku.sh
+git rm --cached init.sh
 git commit -am "Initial commit"
 
 # --------------------------
