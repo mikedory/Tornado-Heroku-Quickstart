@@ -1,7 +1,17 @@
+# system stuff
 bin
 build
 include
 lib
+
+# python stuff
 *.pyc
+
+# virtualenv stuff
+venv
+
+# osx stuff
 .DS_Store
+
+# silly stuff
 .svn

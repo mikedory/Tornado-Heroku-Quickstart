@@ -42,6 +42,15 @@ select yn in "Yes" "No"; do
     esac
 done
 
+# make a new Heroku app (or don't)
+echo "Do you want a virtualenv?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) virtualenv venv --distribute && source ./venv/bin/activate; break;;
+        No ) echo "Cool."; break;;
+    esac
+done
+
 # no need for this file anymore, eh?
 echo "Cleaning up..."
 rm ./$0
