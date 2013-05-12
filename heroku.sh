@@ -7,10 +7,6 @@
 
 # --------------------------
 
-# set up the pip requirements
-touch requirements.txt
-echo "Tornado==3.0.1" >> requirements.txt
-
 # set up the Procfile
 touch Procfile
 echo 'web: python main.py --port=$PORT' >> Procfile
