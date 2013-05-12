@@ -42,7 +42,7 @@ select yn in "Yes" "No"; do
             break;;
         No ) 
             echo "No worries, you can do that later via the heroku.sh file"
-            ;;
+            break;;
     esac
 done
 
@@ -54,15 +54,15 @@ select yn in "Yes" "No"; do
             virtualenv venv --distribute
             source ./venv/bin/activate
             pip install -r requirements.txt
-            ;;
+            break;;
         No ) 
             echo "Cool."
-            ;;
+            break;;
     esac
 done
 
 # no need for this file anymore, eh?
-echo "Cleaning up..."
+echo "Wrapping up..."
 rm ./$0
 
 # blam. 'tis done.
