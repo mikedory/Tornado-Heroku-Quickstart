@@ -18,7 +18,7 @@ echo "Creating directories and fetching dependancies"
 mkdir -p ./static/js/libs/jquery ./static/css/libs/normalize
 
 # fetch yer dependancies
-curl -o ./static/js/libs/jquery/jquery-1.8.3.min.js https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js
+curl -o ./static/js/libs/jquery/jquery-1.8.3.min.js https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 curl -o ./static/css/libs/normalize/normalize.css http://necolas.github.com/normalize.css/2.1.2/normalize.css
 
 # --------------------------
