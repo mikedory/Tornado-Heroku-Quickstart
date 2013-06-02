@@ -1,6 +1,9 @@
 ## Tornado on Heroku
 
-[Heroku](http://heroku.com) is a great system for launching applications. [Tornado](http://tornadoweb.org) is a great app framework. They play nicely together.
+[Heroku](http://heroku.com) is a great system for launching applications. [Tornado](http://tornadoweb.org) is a great app framework. They play nicely together!
+
+
+### Getting started
 
 This app should give you the basics to get a super-simple app up and running on Heroku.  You can do all that just by downloading your own copy:
 
@@ -12,9 +15,24 @@ Then, run the setup script:
 
 That's it!  You're good to go!
 
-__Note:__ If you don't want to immediately start a Tornado app, that's fine too! Just choose option #2 during the init process, and it'll skip that part.  You can then run `heroku.sh` at any point later on to make a new app and punt everything up.
+
+### Options
+
+This script assumes you might want to use [virtualenv](http://www.virtualenv.org/) to manage Python version and dependencies (and you do, don't you?), but if that's not your particular cup of tea, pick the second option and the script will move right along.
+
+Additionally, if you don't want to immediately start a Tornado app, that's fine too! Just choose option #2 when prompted, and it'll skip that part.  
+
+If you decide later on that you want to use Heroku, you can do so via the provided script:
+
+    ./heroku.sh
+
+You can also modify the script, or just delete the file entirely if you won't be needing it.
 
 
 ## About
 
-This app was assembled by [Mike Dory](https://github.com/mikedory), with some great updates by [tedb0t](https://github.com/virgildisgr4ce) and [gregory80](https://github.com/gregory80). Contributions are welcome, so fork away!
+This app was assembled by [Mike Dory](https://github.com/mikedory), with some great updates by [tedb0t](https://github.com/virgildisgr4ce) and [gregory80](https://github.com/gregory80). 
+
+There's plenty more to read at the Heroku dev center, especially around their [Python support](https://devcenter.heroku.com/articles/python), options for [background tasks](https://devcenter.heroku.com/articles/python-rq), and way more.
+
+Contributions to this project are welcome, so shoot over a pull request if you've got ideas on how to make it better.  Fork away!
