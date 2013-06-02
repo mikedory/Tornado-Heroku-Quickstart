@@ -9,7 +9,6 @@
 
 #!/usr/bin/env python
 import os.path
-import os
 import tornado.escape
 import tornado.httpserver
 import tornado.ioloop
