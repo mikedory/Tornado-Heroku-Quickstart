@@ -20,6 +20,7 @@ select yn in "Yes" "No"; do
     case $yn in
         Yes )
             echo "python-3.3.2" >> runtime.txt
+            break;;
         No )
             echo "python-2.7.4" >> runtime.txt
             break;;
