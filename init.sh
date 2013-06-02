@@ -43,7 +43,7 @@ select yn in "Yes" "No"; do
             pip install -r requirements.txt
             break;;
         No ) 
-            echo "Cool."
+            echo "Cool. You can run \`pip install tornado\` to get the latest."
             break;;
     esac
 done
